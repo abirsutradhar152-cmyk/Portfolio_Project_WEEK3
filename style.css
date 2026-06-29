@@ -1,0 +1,238 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Theme Variables */
+:root {
+    --bg-color: #f8fafc;
+    --text-color: #1e293b;
+    --header-bg: #0f172a;
+    --card-bg: white;
+    --primary-color: #2563eb;
+    --secondary-color: #cbd5e1;
+    --footer-bg: #0f172a;
+    --shadow-light: rgba(0,0,0,0.08);
+    --shadow-dark: rgba(0,0,0,0.04);
+}
+
+/* Dark Mode Theme */
+body.dark-mode {
+    --bg-color: #0f172a;
+    --text-color: #f8fafc;
+    --header-bg: #020617;
+    --card-bg: #1e293b;
+    --primary-color: #38bdf8;
+    --secondary-color: #475569;
+    --footer-bg: #020617;
+    --shadow-light: rgba(255,255,255,0.05);
+    --shadow-dark: rgba(255,255,255,0.02);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Header */
+header {
+    background: var(--header-bg);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+
+header p {
+    margin-top: 8px;
+    color: #cbd5e1;
+}
+
+/* Theme Toggle Button */
+#theme-toggle {
+    margin-top: 20px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    background: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+#theme-toggle:hover {
+    transform: translateY(-2px);
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 8px 15px;
+    border-radius: 6px;
+}
+
+/* Professional Hover */
+nav ul li a:hover {
+    background: rgba(255,255,255,0.12);
+    transform: translateY(-2px);
+}
+
+/* Main Layout */
+main {
+    display: grid;
+    gap: 30px;
+    padding: 40px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* 3D Card Effect */
+section {
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow:
+        0 10px 25px var(--shadow-light),
+        0 5px 10px var(--shadow-dark);
+    transition: all 0.3s ease;
+}
+
+/* Subtle 3D Hover */
+section:hover {
+    transform: translateY(-6px);
+    box-shadow:
+        0 18px 35px var(--shadow-light),
+        0 8px 15px var(--shadow-dark);
+}
+
+/* Section Titles */
+section h1,
+section h2 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* Images */
+img {
+    width: 180px;
+    border-radius: 12px;
+    margin: 20px 0;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+    transition: transform 0.3s ease;
+}
+
+/* Subtle Image Hover */
+img:hover {
+    transform: scale(1.03);
+}
+
+/* Skills */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+textarea {
+    padding: 12px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+    font-size: 1rem;
+    background: white;
+    color: black;
+    transition: border 0.3s ease;
+}
+
+/* Dark Mode Form Inputs */
+body.dark-mode input,
+body.dark-mode textarea {
+    background: #334155;
+    color: white;
+}
+
+input:focus,
+textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 15px rgba(37, 99, 235, 0.25);
+}
+
+/* Button Hover */
+input[type="submit"]:hover {
+    transform: translateY(-3px);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: var(--footer-bg);
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    img {
+        width: 140px;
+    }
+}

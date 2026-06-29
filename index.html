@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Abir Sutradhar</h1>
+        <p>Web Developer | React Learner | Future Full Stack Developer</p>
+
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle">🌙 Dark Mode</button>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- About Section -->
+        <section id="about">
+            <h1>About Me</h1>
+
+            <img src="images/profile.jpg" alt="Profile picture of Abir Sutradhar" width="120">
+
+            <p>
+                Hello! My name is <strong>Abir Sutradhar</strong>. I am passionate about web development
+                and currently learning React.js. I have completed HTML, CSS, and
+                JavaScript and am working towards becoming a full-stack developer.
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h1>Skills</h1>
+
+            <img src="images/coding.jpg" alt="Person coding on a laptop" width="120">
+
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>React.js</li>
+                <li>Git & GitHub</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h1>Contact Me</h1>
+
+            <!-- Contact Form -->
+            <form action="#" method="post">
+
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Enter name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter email" required><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" placeholder="Enter message" rows="5" cols="30" required></textarea><br><br>
+
+                <input type="submit" value="Send Message">
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Abir Sutradhar. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
